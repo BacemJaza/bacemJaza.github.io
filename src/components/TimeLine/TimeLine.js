@@ -48,7 +48,7 @@ const Timeline = () => {
       <SectionText>
         Demo about the "ABOUT" Section
       </SectionText>
-      <CarouselContainer ref={carouselRef}>
+      <CarouselContainer ref={carouselRef} >
         <>
           {TimeLineData.map((item,index)=>(
             <CarouselMobileScrollNode key={index} final={index==TOTAL_CAROUSEL_COUNT-1}>
@@ -60,7 +60,9 @@ const Timeline = () => {
             onClick = {(e)=>handleClick(e,index)}>
               <CarouselItemTitle>
                 {item.year}
+
               </CarouselItemTitle>
+              <CarouselItemText>{item.text}</CarouselItemText>
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}
@@ -79,6 +81,7 @@ const Timeline = () => {
           </CarouselButton>
         ))}
       </CarouselButtons>
+      <SectionDivider/>
     </Section>
   );
 };
