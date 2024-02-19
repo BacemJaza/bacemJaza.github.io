@@ -1,8 +1,10 @@
 import React from 'react';
-
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import dynamic from "next/dynamic";
+import Image from 'next/image';
+import { Section, SectionText, SectionTitle, SectionDivider } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import BackgroundAnimation from '../BackgrooundAnimation/BackgroundAnimation';
+import { LeftSection, RightSection } from './HeroStyles';
 
 const Hero = (props) => (
   <Section row nopadding>
@@ -16,7 +18,11 @@ const Hero = (props) => (
       </SectionText>
       {/* <Button onClick ={()=>window.location ="/"}>Learn More</Button> */}
     </LeftSection>
+    <RightSection>
+      <BackgroundAnimation/>
+    </RightSection>
+
   </Section>
 );
 
-export default Hero;
+export default dynamic (() => Promise.resolve(Hero), {ssr: false}) //Hydration problem

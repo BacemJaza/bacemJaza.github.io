@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-
+import dynamic from "next/dynamic";
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
 
@@ -41,4 +41,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default dynamic (() => Promise.resolve(Footer), {ssr: false}) //Hydration problem

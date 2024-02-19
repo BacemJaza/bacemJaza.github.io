@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionTitle, SectionDivider } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 var projectsList = [{
   title: "Project 1",
@@ -18,8 +18,8 @@ var projectsList = [{
 ];
 const Projects = () => (
   <div>
-    <Section nopadding id='projects'>
-      <SectionDivider/>
+    <Section  id='projects'>
+    <SectionDivider/>
       <SectionTitle main>Projects</SectionTitle>
       <GridContainer>
         {projects.map(({id,image,title,description,tags,source,visit})=>(

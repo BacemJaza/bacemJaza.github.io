@@ -1,15 +1,20 @@
+import BackgroundAnimation from '@/components/BackgrooundAnimation/BackgroundAnimation'
 import React from 'react'
 
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import { Container } from './LayoutStyles'
 
+
 export const Layout = ({children}) => {
   return (
+    <div>
     <Container>
-    <Header/>
-     <main>{children}</main> 
-     <Footer/>
+      <Header/>
+      <main>{children}</main> 
+      <Footer/>
     </Container>
+    </div>
+    
   )
 }
