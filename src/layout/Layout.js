@@ -8,13 +8,13 @@ import { Container } from './LayoutStyles'
 
 export const Layout = ({children}) => {
   return (
-    <div>
+    
     <Container>
       <Header/>
       <main>{children}</main> 
       <Footer/>
     </Container>
-    </div>
+    
     
   )
 }

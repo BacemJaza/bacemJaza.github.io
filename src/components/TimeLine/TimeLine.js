@@ -1,19 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
-
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { TimeLineData } from '../../constants/constants';
-
+import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img, Button } from './TimeLineStyles';
+import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode, ModsSection } from './TimeLineStyles';
+import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { projects, TimeLineData } from '../../constants/constants';
+import { mods } from '../../constants/constants';
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
 const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
-
-  // const scroll = (node, left) => {
-  //   return node.scrollTo({ left, behavior: 'smooth' });
-  // }
-
   const handleClick = (e, i) => {
     e.preventDefault();
 
@@ -24,65 +19,38 @@ const Timeline = () => {
     }
   }
 
-  // const handleScroll = () => {
-  //   if (carouselRef.current) {
-  //     const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData.length);
-
-  //     setActiveItem(index);
-  //   }
-  // }
-
-  // // snap back to beginning of scroll when window is resized
-  // // avoids a bug where content is covered up if coming from smaller screen
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     scroll(carouselRef.current, 0);
-  //   }
-
-  //   window.addEventListener('resize', handleResize);
-  // }, []);
 
   return (
-    <Section id='about'>
-      <SectionTitle>About Me</SectionTitle>
+    <div>
+    <Section>
+      <SectionTitle main>About Me</SectionTitle>
+      <SectionDivider/>
       <SectionText>
-        Demo about the "ABOUT" Section
+      I'm Jaza Bacem, 
+      a web developer and Computer Science student with a passion for creating awesome digital experiences.
       </SectionText>
-      <CarouselContainer ref={carouselRef} >
-        <>
-          {TimeLineData.map((item,index)=>(
-            <CarouselMobileScrollNode key={index} final={index==TOTAL_CAROUSEL_COUNT-1}>
-              <CarouselItem
-              index={index}
-              id={`carousel_item-${index}`
-            }
-            active={activeItem}
-            onClick = {(e)=>handleClick(e,index)}>
-              <CarouselItemTitle>
-                {item.year}
-
-              </CarouselItemTitle>
-              <CarouselItemText>{item.text}</CarouselItemText>
-              </CarouselItem>
-            </CarouselMobileScrollNode>
-          ))}
-        </>
-      </CarouselContainer>
-      <CarouselButtons>
-        {TimeLineData.map((item,index)=>(
-          <CarouselButton
-            key={index}
-            index={index}
-            active={activeItem}
-            onClick={(e)=>handleClick(e,index)}
-            type="button"
-          >
-            <CarouselButtonDot active={activeItem}/>
-          </CarouselButton>
-        ))}
-      </CarouselButtons>
       
     </Section>
+    <ModsSection>
+    <GridContainer>
+        {mods.map(({id,image,title,description,tags,source,visit})=>(
+          <BlogCard key={id}>
+            <Img src={image}/>
+            <TitleContent>
+              <HeaderThree>{title}</HeaderThree>
+              <CardInfo>{description}</CardInfo>
+              <Button>Check for more</Button>
+              
+            </TitleContent>
+            
+          </BlogCard>
+          
+        ))}
+        
+      </GridContainer>
+      
+      </ModsSection>
+    </div>
   );
 };
 

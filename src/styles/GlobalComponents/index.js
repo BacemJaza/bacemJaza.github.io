@@ -10,7 +10,7 @@ export const Section = styled.section`
   position: relative;
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
-
+//  height: 100vh;
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
     flex-direction: column;
@@ -25,6 +25,7 @@ export const Section = styled.section`
 `
 
 export const SectionTitle = styled.h2`
+  float: left;
   font-weight: 800;
   font-size: ${(props) => props.main ? '65px' : '56px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
@@ -54,7 +55,7 @@ export const SectionTitle = styled.h2`
   }
 `
 
-export const SectionText = styled.p`
+export const SectionText = styled.div`
   max-width: 800px;
   font-size: 24px;
   line-height: 40px;
@@ -192,10 +193,11 @@ export const ButtonBack = styled.div`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
+    // width: 100%;
     height: 32px;
     font-size: 14px;
     margin-bottom: ${({ alt }) => alt ? '0' : '32px'};
+    margin-left:30%;
   }
 `
 

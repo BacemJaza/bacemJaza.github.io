@@ -31,11 +31,11 @@ export const List = styled.ul`
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin: 3rem 0;
-  
+  gap: 100px;
+  // margin: auto;
+  justify-content:space-between;
   @media ${props => props.theme.breakpoints.lg}{
-    margin: 64px 0;
+    // margin: 64px 0;
   }
 
   @media ${props => props.theme.breakpoints.md}{
@@ -114,10 +114,11 @@ export const ListItem = styled.li`
 `
 
 export const ListIcon = styled.img`
-  display: block;
-  width: 48px;
-  height: 48px;
-  margin-bottom: 10px;
+  display: flex;
+  float: right;
+  width: auto;
+  height: 40px;
+
   
   @media ${props => props.theme.breakpoints.md}{
     width: 40px;
@@ -130,4 +131,60 @@ export const ListIcon = styled.img`
     height: 32px;
     margin-bottom: 0px;
   }
+`
+export const Box = styled.div`
+  background: #212D45;
+  border-radius: 12px;
+  height: auto;
+  padding: 24px;
+  @media ${props => props.theme.breakpoints.lg} {
+    // height: 210px;
+
+  }
+
+  @media ${props => props.theme.breakpoints.md} {
+    // height: 135px;
+    padding: 16px;
+  }
+
+  @media ${props => props.theme.breakpoints.sm} {
+    // height: 110px;
+    padding: 12px;
+    
+    &:nth-child(2n){
+      grid-row:2;
+    }
+  }
+`
+export const Boxes = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 24px 0 40px;
+
+  @media ${props => props.theme.breakpoints.md}{
+    gap: 16px;
+    margin: 20px 0 32px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  @media ${props => props.theme.breakpoints.sm}{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    // max-width: 500px;
+    margin: 24px auto;
+  }
+`
+export const TechnologiesList = styled.div`
+    display: flex;
+    border: solid rgba(15,22,36);
+    
+    border-radius:20px;
+    // margin: auto;
+    margin-bottom:5px;
+    padding:10px 0;
+    align-items:center;
+    justify-content: space-around;
 `

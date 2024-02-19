@@ -4,24 +4,25 @@ import Image from 'next/image';
 import { Section, SectionText, SectionTitle, SectionDivider } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import BackgroundAnimation from '../BackgrooundAnimation/BackgroundAnimation';
-import { LeftSection, RightSection } from './HeroStyles';
+import { LeftSection, RightSection, SectionCustom } from './HeroStyles';
 
 const Hero = (props) => (
-  <Section row nopadding>
+  <Section row>
     <LeftSection>
       <SectionTitle main center>
-          Welcome To <br/>
-          My Personal Portfolio
+      Welcome to <br/>
+      my digital home! 
       </SectionTitle>
       <SectionText>
-        This is a demo to the portfolio website tutorial
+      This is where my passions and talents converge
+      and I'm excited to give you a glimpse into my creative world.
       </SectionText>
-      {/* <Button onClick ={()=>window.location ="/"}>Learn More</Button> */}
-    </LeftSection>
-    <RightSection>
+      <Button onClick ={()=>window.location ="/"}>Learn More</Button>
+      </LeftSection>
+      <RightSection >
       <BackgroundAnimation/>
-    </RightSection>
-
+      </RightSection>
+      
   </Section>
 );
 

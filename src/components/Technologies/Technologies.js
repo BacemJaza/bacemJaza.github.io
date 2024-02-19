@@ -1,40 +1,32 @@
 import React from 'react';
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { Box, Boxes, List, ListContainer, ListIcon, ListItem, ListParagraph, ListTitle, TechnologiesList } from './TechnologiesStyles';
 import dynamic from "next/dynamic";
+import { TechnologiesData } from '@/constants/constants';
 
 const Technologies = () =>  (
   <Section>
-    <SectionDivider/>
-    <br/>
     <SectionTitle>Technologies</SectionTitle>
+    <SectionDivider/>
     <SectionText>
       This is a demo for what I say in technologies section
     </SectionText>
-    <List>
-      <ListItem>
-        <DiReact size="3rem"/>
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>Experience with <br/> React JS</ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <DiFirebase size="3rem"/>
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>Experience with <br/> Node and databases</ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <DiFirebase size="3rem"/>
-        <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
-          <ListParagraph>Experience with <br/> Figma</ListParagraph>
-        </ListContainer>
-      </ListItem>
-    </List>
+    <Boxes>
+      {TechnologiesData.map((tech,index) =>(
+        <Box key={index}>
+          <ListTitle>{tech.title}</ListTitle>
+          
+            {tech.description.map((t,index) =>(
+            <TechnologiesList key={index}>
+              {t.name}
+              <ListIcon src={t.icon}/>
+            </TechnologiesList>
+            
+          ))}
+      </Box>
+      ))} 
+    </Boxes>
   </Section>
 );
 

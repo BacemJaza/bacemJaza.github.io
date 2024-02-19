@@ -1,12 +1,13 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.section`
-	width: calc(100vw - 96px);
-  max-width: 1040px;
-  padding: 2rem 48px 40px;
-  margin: 1rem auto;
-  box-sizing: content-box;
-
+	display:flex;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	// padding: 2rem 48px 40px;
+	// margin: 1rem auto;
+	// width:100px;
+    align-items:center;
+    justify-content: space-around;
 
   @media ${props => props.theme.breakpoints.sm} {
     padding: 0 16px 48px;
@@ -35,7 +36,7 @@ export const LinkItem = styled.a`
 	}
 
 	@media ${props => props.theme.breakpoints.sm} {
-		font-size: 8px;
+		font-size: 10px;
 		line-height: 14px;
 		margin-bottom: 8px;
 		display: flex;
@@ -45,7 +46,6 @@ export const LinkItem = styled.a`
 
 export const SocialIconsContainer = styled.div`
 max-width: 1040px;
-display: flex;
 justify-content: space-between;
 
 @media ${props => props.theme.breakpoints.md}{
@@ -114,11 +114,11 @@ export const SocialContainer = styled.div`
 
 
 export const LinkList = styled.ul`
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-  display: grid;
-	grid-template-columns: repeat(3, minmax(85px, 220px));
+	
+  	display: flex;
+	  justify-content: space-around;
 	gap: 40px;
-  padding: 40px 0 28px;
+  	padding: 40px 0 28px;
 
 	@media ${props => props.theme.breakpoints.lg} {
 		padding: 32px 0 16px;
@@ -130,12 +130,33 @@ export const LinkList = styled.ul`
 		gap: 16px;
 	}
 	@media ${props => props.theme.breakpoints.sm} {
+		flex-direction:column;
 		width: 100%;
 		padding: 32px 4px 16px;
 		gap: 5px;
 	}
 `
+export const NoteContainer = styled.div`
+    display:flex;
+    width: 200px;
+    margin-top:20px;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
 
+`
+export const ImgSection = styled.img`
+    border:solid #2C304D 1px;
+    border-radius:10px;
+    height:170px;
+    background-color:#2C304D;
+    margin-bottom:10px;
+
+`
+export const NoteSection
+ = styled.div`
+    min-height:20px;
+`
 export const LinkColumn = styled.div`
 	display: flex;
 	flex-direction: column;

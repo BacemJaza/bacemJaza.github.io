@@ -1,13 +1,15 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
-
 export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
+
   padding: 1rem;
   padding-top: 2rem;
+  max-height:75px;
+  // background-color: black;
+  
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -20,37 +22,90 @@ export const Span = styled.span `
   font-size: 2rem
 `;
 
+
+
+
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 1 / 2;
   display: flex;
   flex-direction: row;
-  align-content: center;
+  // align-content: center;
+  height: fit-content;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 5;
+  grid-area: 1 / 2 / 2 / 6;
   display: flex;
   justify-content: space-around;
   align-content: center;
+  height: fit-content;
   
+  @media ${(props) => props.theme.breakpoints.md} {
+    // display: none;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
   }
-  @media ${(props) => props.theme.breakpoints.md} {
-    display: none;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    // grid-area: 1 / 2 / 2 / 5;
+    
   }
+ 
 `;
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  height: fit-content;
+  // align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
     
   }
+`;
+
+export const Mods = styled.div`
+display: flex;
+  grid-area: 1 / 7 / 1 / 7;
+  padding: 6px;
+  // justify-content: space-around;
+  flex-direction: column;
+  background-color: hsl(232.7,27.3%,23.7%);
+  margin-top:-60%;
+  padding-top:50%;
+  // padding-bottom:100px;
+  height: 660vh;
+  @media(height>120vh){
+    background-color:black;
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+    // display: none;
+    
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    // display: none;
+    
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
+  }
+  @keyframes wipe-enter{
+    0% {
+      transform: translateY(-120vh);
+    }
+    
+  }
+  
+  @media  (prefers-reduced-motion: no-preference) {
+    
+      animation-name: wipe-enter;
+      animation-duration: 3s;
+      
+    
+  }
+  
 `;
 
 // Navigation Links
@@ -64,7 +119,7 @@ export const NavLink = styled.a`
     opacity: 1;
     cursor: pointer;
   }
-  
+
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
   }
@@ -123,11 +178,15 @@ export const SocialIcons = styled.a`
 transition: 0.3s ease;
 color: white;
 border-radius: 50px;
-  padding: 8px;
+  padding: 6px;
+  padding-bottom:10px;
+height: fit-content;
+// width: 20px;
 &:hover {
     background-color: #212d45;
-    transform: scale(1.2);
+    // transform: scale(1.2);
     cursor: pointer;
     
   }
+  
 `

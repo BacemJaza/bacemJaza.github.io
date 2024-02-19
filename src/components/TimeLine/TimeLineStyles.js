@@ -1,154 +1,131 @@
 
 import styled from 'styled-components'
 
-export const CarouselContainer = styled.ul`
-  max-width: 1040px;
-  background: #0F1624;
-  padding: 0rem;
-  list-style:none;
+
+export const ModsSection = styled.div`
+height : 100%;
+
+// background-color: hsl(232.7,27.3%,23.7%);
+
+
+
+`
+export const Img = styled.img`
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  overflow: hidden;
+`
+
+export const GridContainer = styled.section`
+min-height: 50vh;
+display: flex;
+justify-content: center;
+place-items: center;
+column-gap: 4rem;
+justify-content: space-around;
+border-radius: 2%;
+background-color: hsl(232.7,27.3%,23.7%);
+width: 99%;
+@media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
-  justify-content: space-between; 
-  /* overflow-x: hidden; */
+  flex-direction: column;
+  padding: 2rem;
+  padding-bottom: 0;
+}
 
-  margin-left: 32px;
-  &:first-of-type{
-    margin-left: 0px;
-  }
-
-  margin-bottom: 80px;
-
-  //remove scrollbar
-  scrollbar-width: none;  
-   &::-webkit-scrollbar {
-     display: none;
-   }
-
-  @media ${props => props.theme.breakpoints.sm} {
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    touch-action: pan-x;
-    justify-content: initial;
-    margin-bottom: 8px;
-  }
 `
-export const CarouselMobileScrollNode = styled.div`
-  @media ${props => props.theme.breakpoints.sm} {
-    display: flex;
-    min-width: ${({ final }) => final ? `120%;` : `min-content`}
-  }
-`
-
-export const CarouselItem = styled.div`
-  background: #0F1624;
-  border-radius: 3px;
-  max-width: 196px;
-
-  @media ${props => props.theme.breakpoints.md} {
-    max-width: 124px;
-  }
+export const BlogCard = styled.div`
   
-  @media ${props => props.theme.breakpoints.sm} {
-    margin-left: 32px;
-    min-width: 120px;
-    background: #0E131F;
-    padding: 4px;
-    align-content: start;
-    scroll-snap-align: start;
-    border-radius: 3px;
-    overflow: visible;
-    position: relative;
-    height: fit-content;
-    
-    ${(props) => props.active === props.index ? `opacity: 1` : `opacity: 0.5`}; 
+cursor : pointer;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  text-align: center;
+  width: 350px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
   }
-`
-
-export const CarouselItemTitle = styled.h4`
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.02em;
-  display: flex;
-  /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
-  background: linear-gradient(121.57deg, #FFFFFF 10%, rgba(255, 255, 255, 0.66) 30.15%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 8px;
-
-  @media ${props => props.theme.breakpoints.md} {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 4px;
-  }
-  
-  @media ${props => props.theme.breakpoints.sm} {
-    font-size: 16px;
-    line-height: 24px;
-  }
-`
-export const CarouselItemImg = styled.svg`
-  margin-left: 21px;
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+`;
+export const TitleContent = styled.div`
+  text-align: center;
+  z-index: 20;
   width: 100%;
 
-  @media ${props => props.theme.breakpoints.sm} {
-    -webkit-mask-image: none;
-    margin-left: 16px;
-    overflow: visible;
-  }
+`;
+
+
+export const HeaderThree = styled.h3`
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #9cc9e3;
+  padding: .5rem 0;
+  font-size: ${(props) => props.title ? '3rem' : '2rem'};
+`;
+
+export const Button = styled.button`
+  height: auto;
+  margin: 20px auto;
+  border: 0;
+  background: #0077b6;
+  color: #dad7cd;
+  padding: 1rem;
+  font-weight: bold;
+ 
+`;
+
+export const Intro = styled.div`
+  width: 170px;
+  margin: 0 auto;
+  color: #dce3e7;
+  font-family: 'Droid Serif', serif;
+  font-size: 13px;
+  font-style: italic;
+  
+  line-height: 18px;
+`;
+
+
+export const CardInfo = styled.p`
+  width: 100%;
+  padding: 0 50px;
+  color: #e4e6e7;
+  font-style: 2rem;
+  line-height: 24px;
+  text-align: justify;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding:.3rem
+  
+}
+`;
+
+
+export const UtilityList = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 2.5rem 0;
+`;
+
+export const ExternalLinks = styled.a`
+color:#d4c0c0;
+font-size: 1.6rem;
+padding:1rem 1.5rem;
+background: #6b3030;
+border-radius: 15px;
+transition: 0.5s;
+&:hover{
+  background: #801414;
+
+}
+`;
+
+export const TagList = styled.ul`
+display: flex;
+justify-content: space-around;
+padding: 2rem;
 `
-
-export const CarouselItemText = styled.p`
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.75);
-  padding-right: 16px;
-
-  @media ${props => props.theme.breakpoints.md} {
-    font-size: 12px;
-    line-height: 18px;
-    padding-right: 32px;
-  }
-  @media ${props => props.theme.breakpoints.sm} {
-    font-size: 10px;
-    line-height: 16px;
-    padding-right: 0;
-  }
-`
-export const CarouselButtons = styled.div`
-  width: 288px;
-
-  display: none;
-  visibility: hidden;
-
-  @media ${props => props.theme.breakpoints.sm} {
-    display: flex;
-    visibility: visible;
-    margin-bottom: 48px;
-  }
-`
-
-export const CarouselButton = styled.button`
-  box-sizing: border-box;
-  background: none;
-  padding: 4px;
-  border: none;
-  cursor: pointer;
-  margin-right: 4px;
-  opacity: ${(props) => props.active === props.index ? `1` : `.33`};
-  transform: ${(props) => props.active === props.index ? `scale(1.6)` : `scale(1)`};
-
-  &:focus {
-    outline: none;
-  }
-`
-
-export const CarouselButtonDot = styled.div`
-  background-color: white;
-  border-radius: 10px;
-  margin: auto;
-  width: 3px;
-  height: 3px;
+export const Tag = styled.li`
+color: #d8bfbf;
+font-size: 1.5rem;
 `

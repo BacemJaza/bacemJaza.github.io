@@ -6,7 +6,7 @@ import { BackgroundAnimationStyle } from './BackgroundAnimationStyles';
   
 // })
 const BackgroundAnimation = () => (
-  <BackgroundAnimationStyle>
+  <BackgroundAnimationStyle id='square'>
     
   </BackgroundAnimationStyle>
      

@@ -3,13 +3,14 @@ import React from 'react';
 import { AiFillGithub, AiOutlineUser, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 import dynamic from "next/dynamic";
-import { Span, Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
-
+import { Span, Container, Divs, Div1, Div2, Div3, Mods,NavLink, SocialIcons } from './HeaderStyles';
+import GlobalStyles from '@/styles/globals';
 const Header = () =>  (
   <div>
     <Container>
+     
       <Div1>
-        <Link href="/" style={{display: "flex", alignItems: "center", color: "white", marginBottom: "20px"}}>
+        <Link href="/" style={{display: "flex", color: "white"}}>
         
           <AiOutlineUser size="3rem"/> <Span>Portfolio</Span>
         
@@ -17,28 +18,22 @@ const Header = () =>  (
       </Div1>
       <Div2>
         <li>
-          <Link href="/">
             <NavLink>Projects</NavLink>
-          </Link>
         </li>
         <li>
-          <Link href="/">
             <NavLink>Technologies</NavLink>
-          </Link>
           </li>
           <li>
-          <Link href="/">
             <NavLink>Accomplishments</NavLink>
-          </Link>
         </li>
         <li>
-          <Link href="/">
             <NavLink>MySpace</NavLink>
-          </Link>
         </li>
         
       </Div2>
-      <Div3>
+      
+      
+      <Mods id='square'>
         <SocialIcons href='/'>
           <AiFillGithub size="3rem"/>
         </SocialIcons>
@@ -48,7 +43,7 @@ const Header = () =>  (
         <SocialIcons href='/'>
           <AiFillInstagram size="3rem"/>
         </SocialIcons>
-      </Div3>
+      </Mods>
     </Container>
   </div>
 );
