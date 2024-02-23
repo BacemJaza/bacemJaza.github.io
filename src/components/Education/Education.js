@@ -59,9 +59,9 @@ const Education = () => {
                 </div>
               <div>
                 <h3>{educ.position}&nbsp; <a href={educ.schoolLink}>@{educ.school}</a></h3>
-                <span>
-                  {educ.time} | {educ.address}
-                </span>
+                <div>
+                  {educ.time} | <h5 style={{color:"white"}}>{educ.headline}</h5>
+                </div>
                 <div>
                   {educ.description}
                 </div>
