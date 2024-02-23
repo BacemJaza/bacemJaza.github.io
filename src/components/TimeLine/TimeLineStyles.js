@@ -18,7 +18,7 @@ export const Img = styled.img`
 `
 
 export const GridContainer = styled.section`
-min-height: 50vh;
+min-height: 60vh;
 display: flex;
 justify-content: center;
 place-items: center;

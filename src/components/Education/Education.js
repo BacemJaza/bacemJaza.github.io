@@ -35,7 +35,7 @@ const Education = () => {
   return (
     <Section>
         <SectionTitle main>
-            Education!
+            Education
         </SectionTitle>
         <SectionDivider/>
         <EducationContainer ref={ref}>
