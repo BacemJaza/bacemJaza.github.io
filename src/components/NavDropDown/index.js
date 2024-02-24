@@ -7,7 +7,7 @@ import { DropDownContainer, DropDownIcon, DropDownItem, DropDownItemDesc, DropDo
 
 const NavDropDown = (props) => (
   <Container>
-    <DropDownIcon/>
+    {/* <DropDownIcon/> */}
   </Container>
 );
 

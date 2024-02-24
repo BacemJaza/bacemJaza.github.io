@@ -5,15 +5,20 @@ export const Img = styled.img`
   height:100%;
   object-fit: cover;
   overflow: hidden;
+  padding:20px;
+  
+  
 `
 
 export const GridContainer = styled.section`
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+display: flex;
+flex-wrap: wrap;
 padding: 3rem;
+justify-content:center;
 place-items: center;
 column-gap: 2rem;
 row-gap: 3rem;
+
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
   flex-direction: column;

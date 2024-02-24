@@ -10,7 +10,7 @@ const Technologies = () =>  (
     <SectionTitle>Technologies</SectionTitle>
     <SectionDivider/>
     <SectionText>
-      This is a demo for what I say in technologies section
+      This is my Technologies Section with its diversity for pioneering precision and innovation in Information Technology Engineering.
     </SectionText>
     <Boxes>
       {TechnologiesData.map((tech,index) =>(

@@ -15,8 +15,8 @@ const Home = () => {
       <Hero />
       <Timeline />
       <Education/>
-      <Projects />
       <Technologies />
+      <Projects />
       <Acomplishments />
     </Layout>
   );

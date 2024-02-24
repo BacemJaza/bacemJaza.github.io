@@ -3,32 +3,23 @@ import { Section, SectionTitle, SectionDivider, SectionSubText, SectionText } fr
 import { projects } from '../../constants/constants';
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Img, Tag, TagList, TitleContent, UtilityList, ChooseSection } from './ProjectsStyles';
-var projectsList = [{
-  title: "Project 1",
-  description: "this a demo for the project"
-},
-{
-  title: "Project 1",
-  description: "this a demo for the project"
-},
-{
-  title: "Project 1",
-  description: "this a demo for the project"
-}
-];
-
-
 import React from 'react'
+
+
 
 const Projects = () => {
   function ShowProjects({id,image,title,description,visit,source,category, projectCategory}) {
+    var style;
+    var backgroundImageStyle;
     if(category == projectCategory){
-
+      if(!image){
+        style = {filter: "blur(2px)"};
+        image = "/images/locked.png";
+      }
     return (
-      <BlogCard key={id}>
-            {category==projectCategory? (
+      <BlogCard key={id} style={style}>
               <div>
-              <Img src={image}/>
+                <Img src={image}></Img>
             <TitleContent>
               <HeaderThree>{title}</HeaderThree>
               <Hr/>
@@ -39,8 +30,6 @@ const Projects = () => {
               <ExternalLinks href={source}>Source</ExternalLinks>
             </UtilityList>
             </div>
-            ):(<div></div>)}
-            
         </BlogCard>
     )
             }
