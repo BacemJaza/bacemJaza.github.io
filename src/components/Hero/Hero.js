@@ -17,7 +17,7 @@ const Hero = (props) => (
       This is where my passions and talents converge
       and I'm excited to give you a glimpse into my creative world.
       </SectionText>
-      <Button onClick ={()=>window.location ="/"}>Learn More</Button>
+      <Button onClick ={()=>window.location ="#aboutMe"}>Learn More</Button>
       </LeftSection>
       <RightSection >
       <BackgroundAnimation/>

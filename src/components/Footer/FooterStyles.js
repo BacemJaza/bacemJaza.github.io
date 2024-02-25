@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.section`
+	height:250px;
 	display:flex;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	// padding: 2rem 48px 40px;

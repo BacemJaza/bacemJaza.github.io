@@ -130,3 +130,10 @@ export const mods = [
   //   id: 3,
   // },
 ];
+
+export const accomplishmentsData = [
+  { image:'', title: "IEEE",text: '' },
+  { image:'',title: "Hult Prize", text: '', },
+  { image:'/images/apek.jpg',title: "APEK", text: ''},
+  { image:'', title: "Hult Prize",text: '' }
+];

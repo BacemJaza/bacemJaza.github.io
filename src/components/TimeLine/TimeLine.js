@@ -22,7 +22,7 @@ const Timeline = () => {
 
   return (
     <div>
-    <Section>
+    <Section id='aboutMe'>
       <SectionTitle main>About Me</SectionTitle>
       <SectionDivider/>
       <SectionText>
@@ -39,8 +39,6 @@ const Timeline = () => {
             <TitleContent>
               <HeaderThree>{title}</HeaderThree>
               <CardInfo>{description}</CardInfo>
-              <Button>Check for more</Button>
-              
             </TitleContent>
             
           </BlogCard>

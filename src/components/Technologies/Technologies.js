@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 import { TechnologiesData } from '@/constants/constants';
 
 const Technologies = () =>  (
-  <Section>
+  <Section id='technologies'>
     <SectionTitle>Technologies</SectionTitle>
     <SectionDivider/>
     <SectionText>

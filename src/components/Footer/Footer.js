@@ -10,7 +10,7 @@ const Footer = () => {
   const [text,count] = useTypewriter({
     words:[
         "Hi, the name's Bacem",
-        "Bacem Jaza😉"
+        "You're always welcome to leave your feedback!"
     ],
     loop:true,
     delaySpeed:2000

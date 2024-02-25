@@ -76,7 +76,7 @@ display: flex;
   margin-top:-60%;
   padding-top:50%;
   // padding-bottom:100px;
-  height: 660vh;
+  height: 7300px;
   @media(height>120vh){
     background-color:black;
   }
