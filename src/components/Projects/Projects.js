@@ -62,7 +62,7 @@ const Projects = () => {
       </SectionTitle>
       <ChooseSection>
         <FaArrowCircleLeft size={20} cursor="pointer" onClick={(e)=>decrementProjectCategoryF(projectCategories)}/>
-        <div>
+        <div style={{fontSize:'2rem'}}>
         {projectCategory}
         </div>
         <FaArrowCircleRight size={20} cursor="pointer" onClick={(e)=>incrementProjectCategoryF(projectCategories)}/>

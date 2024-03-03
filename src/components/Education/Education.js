@@ -55,7 +55,7 @@ const Education = () => {
             {TimeLineData.map((educ,index) =>(
               <EducComponent ref={ref1} key={index}>
                 <div>
-                <LiIcon reference={ref1}/>
+                {/* <LiIcon reference={ref1}/> */}
                 </div>
               <div>
                 <h3>{educ.position}&nbsp; <a href={educ.schoolLink}>@{educ.school}</a></h3>

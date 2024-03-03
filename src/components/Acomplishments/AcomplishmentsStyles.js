@@ -91,21 +91,20 @@ export const Box = styled.div`
   display:flex;
   flex-direction:column;
   // justify-content:space-around;
-  // align-items:center;
+  align-items:center;
   background: #212D45;
   // border: solid white;
   border-radius: 12px;
   height: auto;
   padding: 24px;
   @media ${props => props.theme.breakpoints.lg} {
-    display:grid;
     justify-content:center;
 
   }
 
   @media ${props => props.theme.breakpoints.md} {
-    display:grid;
     justify-content:center;
+    width:90%;
   }
 
   @media ${props => props.theme.breakpoints.sm} {
@@ -116,6 +115,7 @@ export const Box = styled.div`
       grid-row:2;
     }
   }
+  width:90%;
 `
 export const LinkIcon = styled.img`
 

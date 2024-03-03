@@ -150,31 +150,29 @@ export const Box = styled.div`
   @media ${props => props.theme.breakpoints.sm} {
     // height: 110px;
     padding: 12px;
-    
     &:nth-child(2n){
       grid-row:2;
     }
   }
 `
 export const Boxes = styled.div`
-  width: 100%;
+  width: 80%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
-  margin: 24px 0 40px;
-
+  margin: auto;
+  text-align:center;
+  // justify-items:center;
   @media ${props => props.theme.breakpoints.md}{
     gap: 16px;
-    margin: 20px 0 32px;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    margin: auto;
+    grid-template-columns: repeat(1,auto);
   }
 
   @media ${props => props.theme.breakpoints.sm}{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, auto);
     gap: 10px;
-    // max-width: 500px;
-    margin: 24px auto;
+    margin: auto;
   }
 `
 export const TechnologiesList = styled.div`

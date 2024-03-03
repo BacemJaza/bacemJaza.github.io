@@ -26,12 +26,16 @@ column-gap: 4rem;
 justify-content: space-around;
 border-radius: 2%;
 background-color: hsl(232.7,27.3%,23.7%);
-width: 99%;
+width:99%;
+@media ${(props) => props.theme.breakpoints.lg} {
+  width:95%;
+}
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
   flex-direction: column;
   padding: 2rem;
   padding-bottom: 0;
+  width:95%;
 }
 
 `
@@ -43,7 +47,8 @@ cursor : pointer;
   text-align: center;
   width: 350px;
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
+    width: 70%;
+    margin-bottom:20px;
   }
 `;
 export const TitleContent = styled.div`

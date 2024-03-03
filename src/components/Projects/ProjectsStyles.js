@@ -6,6 +6,10 @@ export const Img = styled.img`
   object-fit: cover;
   overflow: hidden;
   padding:20px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height:80%;
+    width:80%;
+  }
   
   
 `
@@ -24,6 +28,7 @@ row-gap: 3rem;
   flex-direction: column;
   padding: 2rem;
   padding-bottom: 0;
+  
 }
 
 `
@@ -32,10 +37,6 @@ export const BlogCard = styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 300px;
-  
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
-  }
 `;
 export const TitleContent = styled.div`
   text-align: center;
@@ -120,7 +121,7 @@ font-size: 1.5rem;
 export const ChooseSection = styled.div`
   display: flex;
   float:right;
-  margin-top: 70px;
+  margin-top: 8%;
   padding:10px;
   font-size: 30px;
   align-items: center;

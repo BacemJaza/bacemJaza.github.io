@@ -13,7 +13,7 @@ export const LeftSection = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-
+    // height:200px;
     margin: 0 auto;
   }
 `;
@@ -26,7 +26,7 @@ export const RightSection = styled.div`
   width: 100%;
   height:fit-content;
   
-  // height: 100vh;
+  height: auto;
   // margin-top: 10%;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80%;

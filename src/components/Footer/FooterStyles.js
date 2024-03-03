@@ -4,15 +4,14 @@ export const FooterWrapper = styled.section`
 	height:250px;
 	display:flex;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	// padding: 2rem 48px 40px;
-	// margin: 1rem auto;
-	// width:100px;
+	width:100%;
     align-items:center;
     justify-content: space-around;
 
   @media ${props => props.theme.breakpoints.sm} {
-    padding: 0 16px 48px;
+    padding: 0 50px 48px;
     width: calc(100vw - 32px);
+	// justify-content: space-between;
   }
 `
 
@@ -20,7 +19,6 @@ export const LinkItem = styled.div`
 	font-size: 18px;
 	line-height: 30px;
 	color: rgba(255, 255, 255, 0.75);
-	margin-bottom: 16px;
 	transition: .3s ease;
 	position: relative;
 	left: 0;
@@ -31,53 +29,52 @@ export const LinkItem = styled.div`
 	}
 
 	@media ${props => props.theme.breakpoints.md} {
+		display: flex;
 		font-size: 16px;
 		line-height: 28px;
-		display: flex;
+		
 	}
 
 	@media ${props => props.theme.breakpoints.sm} {
-		font-size: 10px;
-		line-height: 14px;
-		margin-bottom: 8px;
+		font-size: 15px;
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 	}
 `
 
 export const SocialIconsContainer = styled.div`
-max-width: 1040px;
+// max-width: 1040px;
+display:flex;
 justify-content: space-between;
 
 @media ${props => props.theme.breakpoints.md}{
-  display: flex;
+
   justify-content: space-between;
 }
 
 @media ${props => props.theme.breakpoints.sm}{
-  display: flex;
 	width: 100%;
-  flex-direction: column;
+//   flex-direction: column;
 }
 `
 
 export const CompanyContainer = styled.div`
-  display: flex;
-	align-items:baseline;
-	flex-wrap: wrap;
-	margin-right: auto;
+	// align-items:baseline;
+	// flex-wrap: wrap;
+	// margin-right: auto;
 	
 
 	@media ${props => props.theme.breakpoints.md}{
-		flex-direction: column;
-		align-items: baseline;
+		// flex-direction: column;
+		// align-items: baseline;
 	}
 
 	@media ${props => props.theme.breakpoints.sm}{
 		display: flex;
-		flex-direction: column;
-		margin: 0 0 32px;
-		align-items: center;
+		// flex-direction: column;
+		// margin: 0 0 32px;
+		// align-items: center;
 	}
 `
 
@@ -89,7 +86,6 @@ export const Slogan = styled.p`
 	font-size: 18px;
 	line-height: 30px;
 	padding: 1rem;
-
 	@media ${props => props.theme.breakpoints.md}{
 		font-size: 16px;
 		line-height: 28px;
@@ -107,9 +103,9 @@ export const SocialContainer = styled.div`
   align-items: center;
 
 	@media ${props => props.theme.breakpoints.md}{
-		justify-content: center;
-		padding-right: 16px;
-		flex-wrap: wrap;
+		// justify-content: center;
+		// padding-right: 16px;
+		// flex-wrap: wrap;
 	}
 `
 
@@ -131,16 +127,17 @@ export const LinkList = styled.ul`
 		gap: 16px;
 	}
 	@media ${props => props.theme.breakpoints.sm} {
-		flex-direction:column;
+		// flex-direction:column;
 		width: 100%;
 		padding: 32px 4px 16px;
-		gap: 5px;
+		margin:auto;
+		// gap: 5px;
 	}
 `
 export const NoteContainer = styled.div`
     display:flex;
     width: 200px;
-    margin-top:20px;
+    // margin-top:20px;
     align-items:center;
     justify-content:center;
     flex-direction:column;
@@ -149,14 +146,18 @@ export const NoteContainer = styled.div`
 export const ImgSection = styled.img`
     border:solid #2C304D 1px;
     border-radius:10px;
-    height:170px;
+    height:140px;
     background-color:#2C304D;
-    margin-bottom:10px;
 
 `
 export const NoteSection
  = styled.div`
+ 	display:flex;
     min-height:20px;
+	justify-content:center;
+	margin-top:-20px;
+	color: rgba(255, 255, 255, 0.5);
+	
 `
 export const LinkColumn = styled.div`
 	display: flex;
@@ -171,11 +172,9 @@ export const LinkTitle = styled.h4`
 	line-height: 24px;
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.4);
-	margin-bottom: 16px;
 
 	@media ${props => props.theme.breakpoints.sm} {
 		font-size: 10px;
 		line-height: 12px;
-		margin-bottom: 8px;
 	}
 `

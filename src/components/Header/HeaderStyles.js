@@ -68,6 +68,7 @@ export const Div3 = styled.div`
 
 export const Mods = styled.div`
 display: flex;
+position relative;
   grid-area: 1 / 7 / 1 / 7;
   padding: 6px;
   // justify-content: space-around;
@@ -76,35 +77,23 @@ display: flex;
   margin-top:-60%;
   padding-top:50%;
   // padding-bottom:100px;
-  height: 7300px;
-  @media(height>120vh){
-    background-color:black;
-  }
+  height: 9400px;
+
+
   @media ${(props) => props.theme.breakpoints.lg} {
     // display: none;
-    
+    // height: 9400px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     // display: none;
+    height: 7600px;
     
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    display: none;
-  }
-  @keyframes wipe-enter{
-    0% {
-      transform: translateY(-120vh);
-    }
     
+    // display: none;
   }
-  
-  @media  (prefers-reduced-motion: no-preference) {
-    
-      animation-name: wipe-enter;
-      animation-duration: 3s;
-      
-    
-  }
+
   
 `;
 
@@ -122,6 +111,9 @@ export const NavLink = styled.a`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    display:none;
   }
 `;
 
@@ -181,7 +173,7 @@ border-radius: 50px;
   padding: 6px;
   padding-bottom:10px;
 height: fit-content;
-// width: 20px;
+width:100%;
 &:hover {
     background-color: #212d45;
     // transform: scale(1.2);

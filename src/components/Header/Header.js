@@ -7,7 +7,8 @@ import { DiCssdeck } from 'react-icons/di';
 import dynamic from "next/dynamic";
 import { Span, Container, Divs, Div1, Div2, Div3, Mods,NavLink, SocialIcons } from './HeaderStyles';
 import GlobalStyles from '@/styles/globals';
-const Header = () =>  (
+const Header = () => {
+return (
   <div>
     <Container>
      
@@ -37,21 +38,22 @@ const Header = () =>  (
       
       <Mods id='square'>
         <SocialIcons href='https://github.com/BacemJaza'>
-          <AiFillGithub size="3rem"/>
+          <AiFillGithub size="2rem"/>
         </SocialIcons>
         <SocialIcons href='https://www.linkedin.com/in/jaza-bacem/'>
-          <AiFillLinkedin size="3rem"/>
+          <AiFillLinkedin size="2rem"/>
         </SocialIcons>
         <SocialIcons href='https://www.hackerrank.com/profile/bacemjaza7'>
-          <FaHackerrank size="3rem"/>
+          <FaHackerrank size="2rem"/>
         </SocialIcons>
         <SocialIcons href='https://www.fiverr.com/jazabacem'>
-          <TbBrandFiverr size="3rem"/>
+          <TbBrandFiverr size="2rem"/>
         </SocialIcons>
       </Mods>
     </Container>
   </div>
 );
+} 
 
 export default dynamic (() => Promise.resolve(Header), {ssr: false}) //Hydration problem
 

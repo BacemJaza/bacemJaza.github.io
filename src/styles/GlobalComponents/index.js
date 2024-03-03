@@ -68,12 +68,14 @@ export const SectionText = styled.div`
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 24px;
+    width:90%;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 16px;
+    width:90%;
   }
 `
 

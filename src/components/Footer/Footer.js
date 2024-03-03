@@ -9,18 +9,19 @@ import { Section } from '@/styles/GlobalComponents';
 const Footer = () => {
   const [text,count] = useTypewriter({
     words:[
-        "Hi, the name's Bacem",
-        "You're always welcome to leave your feedback!"
+        "You're always welcome to leave your feedback!",
+        "Let's seek discomfort and live to the fullest."
     ],
     loop:true,
     delaySpeed:2000
 })
   return (
     <Section>
+      
     <FooterWrapper>
       <NoteContainer>
         <ImgSection src="/images/quoteImg.png"/>
-        <NoteSection>{text}</NoteSection>
+        
       </NoteContainer>
       <LinkList>
         <LinkColumn>
@@ -53,6 +54,7 @@ const Footer = () => {
       
       
     </FooterWrapper>
+    <NoteSection>{text}</NoteSection>
     </Section>
   );
 };
