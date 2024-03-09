@@ -162,17 +162,17 @@ export const Boxes = styled.div`
   gap: 24px;
   margin: auto;
   text-align:center;
-  // justify-items:center;
+  // 
   @media ${props => props.theme.breakpoints.md}{
-    gap: 16px;
-    margin: auto;
-    grid-template-columns: repeat(1,auto);
+    // gap: 16px;
+    // margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    // flex-direction:row;
   }
 
   @media ${props => props.theme.breakpoints.sm}{
-    grid-template-columns: repeat(1, auto);
-    gap: 10px;
-    margin: auto;
+    justify-items:center;
+    // margin-left: 500px;
   }
 `
 export const TechnologiesList = styled.div`
