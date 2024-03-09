@@ -166,5 +166,6 @@ export const Boxes = styled.div`
     gap: 10px;
     // max-width: 500px;
     margin: 24px auto;
+    align-items:center;
   }
 `

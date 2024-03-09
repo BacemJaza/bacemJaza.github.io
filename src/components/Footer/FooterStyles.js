@@ -13,6 +13,7 @@ export const FooterWrapper = styled.section`
     width: calc(100vw - 32px);
 	// justify-content: space-between;
   }
+  
 `
 
 export const LinkItem = styled.div`
@@ -54,8 +55,9 @@ justify-content: space-between;
 }
 
 @media ${props => props.theme.breakpoints.sm}{
-	width: 100%;
-//   flex-direction: column;
+	// width: 100%;
+//   flex-direction: row;
+position:relative;
 }
 `
 
@@ -106,6 +108,7 @@ export const SocialContainer = styled.div`
 		// justify-content: center;
 		// padding-right: 16px;
 		// flex-wrap: wrap;
+		
 	}
 `
 
@@ -127,7 +130,7 @@ export const LinkList = styled.ul`
 		gap: 16px;
 	}
 	@media ${props => props.theme.breakpoints.sm} {
-		// flex-direction:column;
+		flex-direction:column;
 		width: 100%;
 		padding: 32px 4px 16px;
 		margin:auto;
@@ -164,6 +167,10 @@ export const LinkColumn = styled.div`
 	flex-direction: column;
 	max-width: 220px;
 	width: 100%;
+	@media ${props => props.theme.breakpoints.sm} {
+		// flex-direction:row;
+	}
+
 `
 export const LinkTitle = styled.h4`
 	font-style: normal;

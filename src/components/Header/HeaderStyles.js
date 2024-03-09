@@ -85,13 +85,13 @@ position relative;
     // height: 9400px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    // display: none;
+    display: none;
     height: 7600px;
     
   }
   @media ${(props) => props.theme.breakpoints.md} {
     
-    // display: none;
+    display: none;
   }
 
   

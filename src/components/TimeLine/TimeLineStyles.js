@@ -36,6 +36,7 @@ width:99%;
   padding: 2rem;
   padding-bottom: 0;
   width:95%;
+  
 }
 
 `

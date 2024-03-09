@@ -171,8 +171,11 @@ export const Boxes = styled.div`
   }
 
   @media ${props => props.theme.breakpoints.sm}{
-    justify-items:center;
+    
     // margin-left: 500px;
+    display:flex;
+    flex-direction:column;
+    justify-items:center;
   }
 `
 export const TechnologiesList = styled.div`
