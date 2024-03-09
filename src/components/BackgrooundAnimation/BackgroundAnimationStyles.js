@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 
 export const BackgroundAnimationStyle = styled.div`
-display: flex;
+// display: flex;
 height: 500px;
 z-index: 200;
 background-image: url("/images/portfoliopic.png");

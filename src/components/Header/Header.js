@@ -5,7 +5,7 @@ import { FaHackerrank } from "react-icons/fa6";
 import { TbBrandFiverr } from "react-icons/tb";
 import { DiCssdeck } from 'react-icons/di';
 import dynamic from "next/dynamic";
-import { Span, Container, Divs, Div1, Div2, Div3, Mods,NavLink, SocialIcons } from './HeaderStyles';
+import { Span, Container, Divs, Div1, Div2, Div3, Mods,NavLink, SocialIcons, ContactDropDown } from './HeaderStyles';
 import GlobalStyles from '@/styles/globals';
 const Header = () => {
 return (
@@ -34,20 +34,18 @@ return (
         </li>
         
       </Div2>
-      
-      
       <Mods id='square'>
         <SocialIcons href='https://github.com/BacemJaza'>
-          <AiFillGithub size="2rem"/>
+          <AiFillGithub size="3rem"/>
         </SocialIcons>
         <SocialIcons href='https://www.linkedin.com/in/jaza-bacem/'>
-          <AiFillLinkedin size="2rem"/>
+          <AiFillLinkedin size="3rem"/>
         </SocialIcons>
         <SocialIcons href='https://www.hackerrank.com/profile/bacemjaza7'>
-          <FaHackerrank size="2rem"/>
+          <FaHackerrank size="3rem"/>
         </SocialIcons>
         <SocialIcons href='https://www.fiverr.com/jazabacem'>
-          <TbBrandFiverr size="2rem"/>
+          <TbBrandFiverr size="3rem"/>
         </SocialIcons>
       </Mods>
     </Container>

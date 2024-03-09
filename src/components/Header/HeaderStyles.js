@@ -76,7 +76,7 @@ position relative;
   background-color: hsl(232.7,27.3%,23.7%);
   margin-top:-60%;
   padding-top:50%;
-  // padding-bottom:100px;
+  padding-bottom:100px;
   height: 9400px;
 
 

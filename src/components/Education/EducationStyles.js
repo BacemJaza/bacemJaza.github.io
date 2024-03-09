@@ -42,4 +42,5 @@ export const EducComponentContainer = styled.ul`
     align-items: start;
     justify-content: space-between;
     margin-left: 4px;
+    text-align:justify;
 `
