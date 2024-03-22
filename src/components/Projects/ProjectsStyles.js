@@ -6,6 +6,7 @@ export const Img = styled.img`
   object-fit: cover;
   overflow: hidden;
   padding:20px;
+  cursor:pointer;
   @media ${(props) => props.theme.breakpoints.sm} {
     height:80%;
     width:80%;
@@ -14,6 +15,42 @@ export const Img = styled.img`
   
 `
 
+export const ModalCard = styled.div`
+margin-top:-55px;
+position: absolute;
+display:flex;
+border: solid;
+border-radius:10%;
+z-index:100;
+background-color: #2C304D;
+min-height:70vh;
+min-width: 80vh;
+max-width: 100vh;
+height:fit-content;
+align-items:center;
+// justify-content:center;
+opacity:0.9;
+flex-direction:column;
+`
+export const ModalBody = styled.div`
+  padding-top:50px;
+
+`
+export const ModalHeader = styled.div`
+display:flex;
+  padding-top:20px;
+  flex-direction:row;
+  justify-content: space-between;
+  width:80%;
+`
+export const CardImg = styled.img`
+  display:flex;
+  width:40%;
+  height:100%;
+  object-fit: cover;
+  margin:auto;
+  padding:10px;
+`
 export const GridContainer = styled.section`
 display: flex;
 flex-wrap: wrap;
@@ -37,6 +74,7 @@ export const BlogCard = styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 300px;
+  padding:20px;
 `;
 export const TitleContent = styled.div`
   text-align: center;
@@ -107,15 +145,21 @@ transition: 0.5s;
 
 }
 `;
-
+export const FilesImg = styled.div`
+display:flex;
+`
 export const TagList = styled.ul`
 display: flex;
+flex-wrap: wrap;
 justify-content: space-around;
 padding: 2rem;
 `
 export const Tag = styled.li`
 color: #d8bfbf;
 font-size: 1.5rem;
+border-bottom:solid 0.5px;
+// border-radius:30%;
+padding:2px;
 `
 
 export const ChooseSection = styled.div`
