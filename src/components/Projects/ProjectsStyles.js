@@ -6,7 +6,7 @@ export const Img = styled.img`
   object-fit: cover;
   overflow: hidden;
   padding:20px;
-  cursor:pointer;
+  
   @media ${(props) => props.theme.breakpoints.sm} {
     height:80%;
     width:80%;
@@ -20,12 +20,12 @@ margin-top:-55px;
 position: absolute;
 display:flex;
 border: solid;
-border-radius:10%;
+border-radius:3%;
 z-index:100;
 background-color: #2C304D;
 min-height:70vh;
-min-width: 80vh;
-max-width: 100vh;
+min-width: 30%;
+max-width: 80%;
 height:fit-content;
 align-items:center;
 // justify-content:center;
@@ -34,6 +34,7 @@ flex-direction:column;
 `
 export const ModalBody = styled.div`
   padding-top:50px;
+  width:80%;  
 
 `
 export const ModalHeader = styled.div`
@@ -42,6 +43,7 @@ display:flex;
   flex-direction:row;
   justify-content: space-between;
   width:80%;
+  padding:5px;
 `
 export const CardImg = styled.img`
   display:flex;
@@ -71,6 +73,7 @@ row-gap: 3rem;
 `
 export const BlogCard = styled.div`
   border-radius: 10px;
+  cursor:pointer;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 300px;

@@ -19,27 +19,27 @@ const Projects = () => {
     return (
       <div>
         <BlogCard key={id} style={style}>
-              <div>
-                <Img src={image} onClick={()=>{showModal=id;setShowModal(showModal);setItem(projects.filter((item)=>item.id==showModal))}}></Img>
+              <div onClick={()=>{showModal=id;setShowModal(showModal);setItem(projects.filter((item)=>item.id==showModal))}}>
+                <Img src={image}></Img>
             <TitleContent>
               <HeaderThree>{title}</HeaderThree>
               <Hr/>
             </TitleContent>
             <TagList>
-              {tags.map(tag=>(
-                <Tag>
+              {tags.map((tag)=>(
+                <Tag key={tag}>
                   {tag}
                 </Tag>
               ))}
             </TagList>
-            
+            </div>
             <UtilityList>
               {category!="Professional"?(  
                 <ExternalLinks href={source}>Code</ExternalLinks>
               ):(null)}   
               <ExternalLinks href={visit}>Visit</ExternalLinks>
               </UtilityList>                   
-            </div>
+            
         </BlogCard>
         
       </div>
@@ -111,8 +111,8 @@ const Projects = () => {
             <CardInfo style={{paddingTop:"20px",textAlign:"center"}}>Demo video</CardInfo>
             <ReactPlayer
             style={{display:"flex",margin:"auto"}}
-            width="300px"
-            height="200px"
+            width="50%"
+            height="100%"
             url={item[0].videoSrc}
             controls={true}
             // light is usefull incase of dark mode
@@ -127,16 +127,16 @@ const Projects = () => {
             <CardInfo style={{paddingTop:"20px",textAlign:"center"}}>Related files</CardInfo>
             <FilesImg>
             {item[0].filesLink.map(file=>(
-            <div>
+            <div key={file}>
               
               {file[1]?(
                 <div>
-                  <a
+                  <a                  
                     href={file[1]}
                     alt="alt text"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{color:"white"}}>
+                    style={{color:"white",width:'fit-content'}}>
                       <CardImg src={file[0]}/>
                   </a>
                 </div>
