@@ -47,7 +47,7 @@ export const projects = [
   },
   {
     title: 'My Portfolio',
-    description: "You're already in it!",
+    description: "You're already in it! Enjoying it so far?",
     image: '/images/portfolioProject.png',
     tags: ['NextJS','Styled Components'],
     source: '/',

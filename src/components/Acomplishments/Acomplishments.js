@@ -16,7 +16,7 @@ function changeImage(){
 }
 
 const Acomplishments = () => (
-  <Section id='#accomplishments'>
+  <Section id='accomplishments'>
     <SectionTitle>Personal Accomplishments</SectionTitle>
     <SectionSubText></SectionSubText>
     <SectionDivider/>
