@@ -18,7 +18,7 @@ const Hero = (props) => (
       This is where my passions and talents converge
       and I'm excited to give you a glimpse into my creative world.
       </SectionText>
-      <Button onClick ={()=>window.location ="#aboutMe"}>
+      <Button>
       <IoIosDocument />
         <a
           href="/files/Bacem-Jaza-Resume.pdf"
