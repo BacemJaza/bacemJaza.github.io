@@ -1,5 +1,17 @@
 export const projects = [
   {
+    title: 'DPP - Battery project',
+    description: "I developed a MERN stack application featuring a user dashboard for registering and showcasing battery passports, with additional security measures implemented to enhance platform safety. Throughout the project, I ensured that the scrum team's efficiency was maintained, meeting deadlines and rigorously testing functionalities.",
+      image: '',
+      tags: ['MERN Stack', 'Redux', 'Tailwind CSS'],
+    source: '/',
+    visit: '/',
+    // filesLink:[['/images/docstreamCertificate.png']],
+    // videoSrc:"https://www.youtube.com/watch?v=HCsihl7BsdQ&t=1s&ab_channel=JazaBacem",
+    category: 'Professional',
+    id: 0,
+  },
+  {
     title: 'Calendar',
     description: "During my internship at Docstream Solutions, I focused on developing a JavaScript plugin aimed at improving the user interface (UI) and user experience (UX) of a calendar system. Over the course of four months, I dedicated my efforts to this project, which involved displaying organized information from the backend in a user-friendly manner. The plugin also included essential CRUD (Create, Read, Update, Delete) functionalities to ensure seamless interaction and management of calendar data. This experience provided me with valuable insights into JavaScript development and UI/UX design principles within web applications.",
       image: '/images/calendarProject.png',
@@ -9,7 +21,7 @@ export const projects = [
     filesLink:[['/images/docstreamCertificate.png']],
     videoSrc:"https://www.youtube.com/watch?v=HCsihl7BsdQ&t=1s&ab_channel=JazaBacem",
     category: 'Professional',
-    id: 0,
+    id: 1,
   },
   {
     title: 'PDF Viewer',
@@ -21,7 +33,7 @@ export const projects = [
     filesLink:[['/images/docstreamCertificate.png']],
     videoSrc:"https://www.youtube.com/watch?v=b5AIhBprsHo&ab_channel=JazaBacem",
     category: 'Professional',
-    id: 1,
+    id: 2,
   },
   {
     title: 'Re-design Site',
@@ -32,7 +44,7 @@ export const projects = [
     filesLink:[['images/manuel.png','files/manuel.pdf']],
     visit: 'https://www.emerillonmc.com',
     category: 'Professional',
-    id: 2,
+    id: 3,
   },
   {
     title: 'Influence Connect',
@@ -43,7 +55,7 @@ export const projects = [
     visit: '/',
     filesLink:[['/images/adscoCertificate.png']],
     category: 'Professional',
-    id: 3,
+    id: 4,
   },
   {
     title: 'My Portfolio',
@@ -53,7 +65,7 @@ export const projects = [
     source: '/',
     visit: '/',
     category: 'Local',
-    id: 4,
+    id: 5,
   },
   {
     title: 'MyNotes',
@@ -64,7 +76,7 @@ export const projects = [
     videoSrc:"https://www.youtube.com/watch?v=3ZCaScGlryM&ab_channel=JazaBacem",
     visit: '/',
     category: 'Local',
-    id: 5,
+    id: 6,
   },
   {
     title: 'Traffic run game',
@@ -74,7 +86,7 @@ export const projects = [
     source: 'https://github.com/BacemJaza/traffic-run-game',
     visit: 'https://traffic-run-game-365j3rqr2-bacemjazas-projects.vercel.app',
     category: 'Local',
-    id: 6,
+    id: 7,
   },
   {
     title: 'My Space',
@@ -84,7 +96,7 @@ export const projects = [
     source: '/',
     visit: '/',
     category: 'Local',
-    id: 7,
+    id: 8,
   },
   {
     title: 'Instagram clone',
@@ -94,7 +106,7 @@ export const projects = [
     source: '/',
     visit: '/',
     category: 'Local',
-    id: 8,
+    id: 9,
   },
   {
     title: 'Maven project',
@@ -105,7 +117,7 @@ export const projects = [
     visit: '/',
     filesLink:[['/images/mavenFile.png','files/mavenProject.pdf']],
     category: 'School',
-    id: 9,
+    id: 10,
   },
   {
     title: 'E-commerce platform',
@@ -115,7 +127,19 @@ export const projects = [
     source: '/',
     visit: '/',
     category: 'School',
-    id: 10,
+    id: 11,
+  },
+  {
+    title: 'Internship Management Site',
+    description: "I developed an internship management system to streamline processes for students and companies, implementing features using Angular, Spring Boot, Python, and Flask. This system significantly improved efficiency in internship application and documentation processes.",
+      image: '',
+      tags: ['AngularJS', 'SpringBoot', 'Tailwind CSS'],
+    source: '/',
+    visit: '/',
+    // filesLink:[['/images/docstreamCertificate.png']],
+    // videoSrc:"https://www.youtube.com/watch?v=HCsihl7BsdQ&t=1s&ab_channel=JazaBacem",
+    category: 'School',
+    id: 12,
   }
 ];
 
@@ -143,7 +167,7 @@ export const mods = [
   },
   {
     title: 'Engineering student',
-    description:"Esprit Software engeneering student",
+    description:"Esprit Software engineering student",
     image: '/images/Study.png',
     source: 'https://google.com',
     visit: 'https://google.com',

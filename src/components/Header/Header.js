@@ -34,20 +34,7 @@ return (
         </li>
         
       </Div2>
-      <Mods id='square'>
-        <SocialIcons href='https://github.com/BacemJaza'>
-          <AiFillGithub size="3rem"/>
-        </SocialIcons>
-        <SocialIcons href='https://www.linkedin.com/in/jaza-bacem/'>
-          <AiFillLinkedin size="3rem"/>
-        </SocialIcons>
-        <SocialIcons href='https://www.hackerrank.com/profile/bacemjaza7'>
-          <FaHackerrank size="3rem"/>
-        </SocialIcons>
-        <SocialIcons href='https://www.fiverr.com/jazabacem'>
-          <TbBrandFiverr size="3rem"/>
-        </SocialIcons>
-      </Mods>
+      
     </Container>
   </div>
 );

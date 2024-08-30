@@ -103,6 +103,8 @@ export const SectionDivider = styled.div`
 `
 export const SectionSubText = styled.p`
   max-width: 800px;
+  display:flex;
+  align-items:center;
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;

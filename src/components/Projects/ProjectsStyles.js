@@ -39,7 +39,8 @@ export const ModalBody = styled.div`
 `
 export const ModalHeader = styled.div`
 display:flex;
-  padding-top:20px;
+  padding-top:30px;
+  margin-top:40px;
   flex-direction:row;
   justify-content: space-between;
   width:80%;
@@ -78,6 +79,8 @@ export const BlogCard = styled.div`
   text-align: center;
   width: 300px;
   padding:20px;
+  min-height:fit;
+  height:550px;
 `;
 export const TitleContent = styled.div`
   text-align: center;

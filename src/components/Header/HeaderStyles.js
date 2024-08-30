@@ -68,25 +68,23 @@ export const Div3 = styled.div`
 
 export const Mods = styled.div`
 display: flex;
-position relative;
+position: absolute;
   grid-area: 1 / 7 / 1 / 7;
   padding: 6px;
   // justify-content: space-around;
   flex-direction: column;
   background-color: hsl(232.7,27.3%,23.7%);
-  margin-top:-60%;
-  padding-top:50%;
-  padding-bottom:100px;
-  height: 9400px;
+  width:fit;
+  right:0;
+  height:150vh;
 
 
   @media ${(props) => props.theme.breakpoints.lg} {
     // display: none;
-    // height: 9400px;
+    height: 100vh;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
-    height: 7600px;
     
   }
   @media ${(props) => props.theme.breakpoints.md} {
