@@ -48,10 +48,11 @@ display:flex;
 `
 export const CardImg = styled.img`
   display:flex;
-  width:40%;
+  width:25%;
   height:100%;
   object-fit: cover;
   margin:auto;
+  // margin-left:180px;
   padding:10px;
 `
 export const GridContainer = styled.section`
