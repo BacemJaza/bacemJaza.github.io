@@ -51,7 +51,7 @@ export const CardImg = styled.img`
   height:100%;
   object-fit: cover;
   // margin:auto;
-  margin-left:320px;
+  margin-left:35%;
   padding:10px;
 `
 export const GridContainer = styled.section`
