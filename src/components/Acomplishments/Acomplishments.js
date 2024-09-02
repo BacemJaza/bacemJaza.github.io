@@ -26,7 +26,7 @@ const Acomplishments = () => (
           
           <BoxNum src={card.image} alt="No image yet" onMouseOver={stopShow()} onMouseOut={changeImage()}/>
           <TextSection>
-            <BoxTitle>
+            <BoxTitle href={card.src}>
               {card.title}
               <IoMdOpen  style={{float:"right",color:"#FFFFFF", fontSize:"15px"}}/>
               </BoxTitle>

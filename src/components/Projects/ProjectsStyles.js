@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Img = styled.img`
   width:100%;
   height:100%;
+  max-height:270px;
   object-fit: cover;
   overflow: hidden;
   padding:20px;
@@ -16,20 +17,18 @@ export const Img = styled.img`
 `
 
 export const ModalCard = styled.div`
-margin-top:-55px;
 position: absolute;
+margin-top:-25%;
 display:flex;
 border: solid;
-border-radius:3%;
-z-index:100;
+border-radius:40px;
+z-index:1000;
 background-color: #2C304D;
-min-height:70vh;
-min-width: 30%;
+min-height:fit-content;
+padding-bottom:100px;
+min-width: 100%;
 max-width: 80%;
-height:fit-content;
-align-items:center;
-// justify-content:center;
-opacity:0.9;
+align-items:center; 
 flex-direction:column;
 `
 export const ModalBody = styled.div`
@@ -48,11 +47,11 @@ display:flex;
 `
 export const CardImg = styled.img`
   display:flex;
-  width:25%;
+  width:30%;
   height:100%;
   object-fit: cover;
-  margin:auto;
-  // margin-left:180px;
+  // margin:auto;
+  margin-left:320px;
   padding:10px;
 `
 export const GridContainer = styled.section`
@@ -135,9 +134,10 @@ export const CardInfo = styled.p`
 export const UtilityList = styled.ul`
   list-style-type: none;
   padding: 0;
-  display: flex;
-  justify-content: space-around;
-  margin: 2.5rem 0;
+  display: grid;
+  grid-cols:2;
+  justify-content: center;
+  margin:5px;
 `;
 
 export const ExternalLinks = styled.a`
@@ -147,6 +147,7 @@ padding:1rem 1.5rem;
 background: #6b3030;
 border-radius: 15px;
 transition: 0.5s;
+margin-bottom:20px;
 &:hover{
   background: #801414;
 

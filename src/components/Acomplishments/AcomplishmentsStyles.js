@@ -126,7 +126,7 @@ export const TextSection = styled.div`
   margin-top:20px;
   margin-left: 20px;
 `
-export const BoxTitle = styled.div`
+export const BoxTitle = styled.a`
 font-style: normal;
 font-weight: 600;
 font-size: 36px;

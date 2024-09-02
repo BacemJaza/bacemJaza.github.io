@@ -19,7 +19,7 @@ const Projects = () => {
     return (
       <div>
         <BlogCard key={id} style={style}>
-              <div onClick={()=>{showModal=id;setShowModal(showModal);setItem(projects.filter((item)=>item.id==showModal))}}>
+              <div >
                 <Img src={image}></Img>
             <TitleContent>
               <HeaderThree>{title}</HeaderThree>
@@ -34,12 +34,13 @@ const Projects = () => {
             </TagList>
             </div>
             <UtilityList>
-              {category!="Professional"?(  
-                <ExternalLinks href={source}>Code</ExternalLinks>
+              {(category!="Professional" && source)?(  
+                <ExternalLinks href={source} target='_blank'>Code</ExternalLinks>
               ):(null)}   
-              <ExternalLinks href={visit}>Visit</ExternalLinks>
+              {!visit?<></>:<ExternalLinks href={visit} target='_blank'>Visit</ExternalLinks>}
+              <ExternalLinks onClick={()=>{showModal=id;setShowModal(showModal);setItem(projects.filter((item)=>item.id==showModal))}}>Open</ExternalLinks>
               </UtilityList>                   
-            
+              
         </BlogCard>
         
       </div>
@@ -112,7 +113,7 @@ const Projects = () => {
             <ReactPlayer
             style={{display:"flex",margin:"auto"}}
             width="50%"
-            height="100%"
+            height="200px"
             url={item[0].videoSrc}
             controls={true}
             // light is usefull incase of dark mode
