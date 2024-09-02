@@ -38,7 +38,7 @@ const Projects = () => {
                 <ExternalLinks href={source} target='_blank'>Code</ExternalLinks>
               ):(null)}   
               {!visit?<></>:<ExternalLinks href={visit} target='_blank'>Visit</ExternalLinks>}
-              <ExternalLinks onClick={()=>{showModal=id;setShowModal(showModal);setItem(projects.filter((item)=>item.id==showModal))}}>Open</ExternalLinks>
+              <ExternalLinks onClick={()=>{showModal=id;setShowModal(showModal);setItem(projects.filter((item)=>item.id==showModal))}} href='#modal'>Open</ExternalLinks>
               </UtilityList>                   
               
         </BlogCard>
@@ -97,7 +97,7 @@ const Projects = () => {
           <ShowProjects key={index} id={id} image={image} tags={tags} title={title} description={description} source={source} visit={visit} category={category} projectCategory={projectCategory}/>
         ))}
         {showModal!=-1?
-        (<ModalCard>
+        (<ModalCard id='modal'>
           <ModalHeader>
             <div>
               {item[0].title}
