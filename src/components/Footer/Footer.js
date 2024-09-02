@@ -36,13 +36,13 @@ const Footer = () => {
           <LinkTitle>Socials</LinkTitle>
           <LinkItem>
             <SocialContainer>
-              <SocialIcons href='/'>
+              <SocialIcons href='https://github.com/BacemJaza' target='_blank'>
                 <AiFillGithub size="3rem"/>
               </SocialIcons>
-              <SocialIcons href='/'>
+              <SocialIcons href='https://www.linkedin.com/in/jaza-bacem/' target='_blank'>
                 <AiFillLinkedin size="3rem"/>
               </SocialIcons>
-              <SocialIcons href='/'>
+              <SocialIcons href='https://www.instagram.com/bacemjaza/' target='_blank'>
                 <AiFillInstagram size="3rem"/>
               </SocialIcons>
             </SocialContainer>
