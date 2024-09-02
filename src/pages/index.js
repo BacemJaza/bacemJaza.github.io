@@ -8,6 +8,7 @@ import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider} from '../styles/GlobalComponents';
 import Education from '@/components/Education/Education';
+import { Analytics } from "@vercel/analytics/react"
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Technologies />
       <Projects />
       <Acomplishments />
+      <Analytics/>
     </Layout>
   );
 };
