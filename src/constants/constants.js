@@ -41,7 +41,7 @@ export const projects = [
       image: '/images/emcProject.png',
       tags: ['Wordpress', 'CSS3','HTML5','PHP'],
     source: '',
-    filesLink:[['images/manuel.png','files/manuel.pdf']],
+    filesLink:[['images/manuel.png','files/Manuel.pdf']],
     visit: 'https://www.emerillonmc.com',
     category: 'Professional',
     id: 3,
@@ -153,7 +153,7 @@ export const TechnologiesData = [
   { title:"FrontEnd", description:[{name:"NextJs",icon:"https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-y563b8iq.png"},{name:"ReactJs", icon:"https://cdn.worldvectorlogo.com/logos/react-2.svg"},{name:"AngularJS", icon:"https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg"}]},
   {title:"BackEnd", description:[{name:"DJANGO",icon:"https://seeklogo.com/images/D/django-logo-4C5ECF7036-seeklogo.com.png"},{name:"Spring BOOT", icon:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Spring_Boot.svg/120px-Spring_Boot.svg.png"}]},
   {title:"Mobile", description:[{name:"Android Studio",icon:"https://1.bp.blogspot.com/-LgTa-xDiknI/X4EflN56boI/AAAAAAAAPuk/24YyKnqiGkwRS9-_9suPKkfsAwO4wHYEgCLcBGAsYHQ/s0/image9.png"},{name:"Flutter", icon:"https://www.ideematic.com/wp-content/uploads/2020/07/flutter_logo-300x300.png"}]},
-  {title:"Team Managment", description:[{name:"Jira",icon:"http://jira.discovery.com.tn:9090/images/atlassian-jira-logo-large.png"},{name:"SCRUM", icon:"https://www.scrum.org/themes/custom/scrumorg_v2/assets/images/logo-250.png"}]},
+  {title:"Team Managment", description:[{name:"Jira",icon:"https://w7.pngwing.com/pngs/992/738/png-transparent-jira-hd-logo-thumbnail.png"},{name:"SCRUM", icon:"https://www.scrum.org/themes/custom/scrumorg_v2/assets/images/logo-250.png"}]},
 ]
 
 export const mods = [
