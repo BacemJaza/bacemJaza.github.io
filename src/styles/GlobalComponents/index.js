@@ -127,13 +127,10 @@ export const SecondaryBtn = styled.button`
   border: 1px solid rgba(255, 255, 255, 0.33);
   box-sizing: border-box;
   border-radius: 999px;
-  padding: 16px 24px;
+  padding: 6px 10px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 16px;
-  width: fit-content;
-  margin-top: 32px;
-  margin-bottom: 80px;
   cursor: pointer;
   transition: 0.4s ease;
   &:focus {

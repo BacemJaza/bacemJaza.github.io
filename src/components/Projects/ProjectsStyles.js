@@ -46,12 +46,11 @@ display:flex;
   padding:5px;
 `
 export const CardImg = styled.img`
-  display:flex;
-  width:30%;
-  height:100%;
-  object-fit: cover;
-  // margin:auto;
-  margin-left:35%;
+  display: flex;
+  width: 30%;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
   padding:10px;
 `
 export const GridContainer = styled.section`
@@ -155,6 +154,8 @@ margin-bottom:20px;
 `;
 export const FilesImg = styled.div`
 display:flex;
+width: fit-content;
+margin:auto;
 `
 export const TagList = styled.ul`
 display: flex;

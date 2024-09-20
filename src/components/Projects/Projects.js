@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Section, SectionTitle, SectionDivider, SectionSubText, SectionText } from '../../styles/GlobalComponents';
+import { Section, SectionTitle, SectionDivider, SectionSubText, SectionText, SecondaryBtn } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import { FaArrowCircleLeft, FaArrowCircleRight, FaWindowClose } from "react-icons/fa";
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Img, Tag, TagList, TitleContent, UtilityList, ChooseSection, ModalCard, ModalBody, ModalHeader, CardImg, FilesImg } from './ProjectsStyles';
@@ -131,18 +131,16 @@ const Projects = () => {
             <div key={file}>
               
               {file[1]?(
-                <div>
                   <a                  
                     href={file[1]}
                     alt="alt text"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{color:"white",width:'fit-content'}}>
+                    target="_blank">
                       <CardImg src={file[0]}/>
+                      <SecondaryBtn style={{display:"flex",margin:"auto"}}>Click to open</SecondaryBtn>
                   </a>
-                </div>
               ):(
-                <CardImg src={file[0]}/>
+                  <CardImg src={file[0]}/>
+                
               )}
             </div>
             ))}
