@@ -7,7 +7,7 @@ export const projects = [
     source: '',
     visit: '',
     filesLink:[['/images/DPP.jpg']],
-    // videoSrc:"https://www.youtube.com/watch?v=HCsihl7BsdQ&t=1s&ab_channel=JazaBacem",
+    videoSrc:"https://www.youtube.com/watch?v=k_Wb5dQ0s1o",
     category: 'Professional',
     id: 0,
   },
