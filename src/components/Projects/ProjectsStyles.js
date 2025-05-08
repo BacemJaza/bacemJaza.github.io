@@ -182,7 +182,6 @@ margin-bottom:20px;
 }
 `;
 export const FilesImg = styled.div`
-display:flex;
 `
 export const TagList = styled.ul`
 display: flex;
