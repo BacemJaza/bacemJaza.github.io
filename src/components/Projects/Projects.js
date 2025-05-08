@@ -103,7 +103,6 @@ const Projects = () => {
             <div>
               {item[0].title} 
             </div>
-            <ModalLogo src={item[0].logo}></ModalLogo>
             <FaWindowClose onClick={()=>{showModal=-1;setShowModal(showModal);}} />
           </ModalHeader>
           <ModalBody>
