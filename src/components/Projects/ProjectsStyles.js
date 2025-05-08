@@ -16,6 +16,20 @@ export const Img = styled.img`
   
 `
 
+export const Logo = styled.img`
+  width:50%;
+  height:100%;
+  max-height:100px;
+  object-fit: cover;
+  
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height:80%;
+    width:80%;
+  }
+  
+  
+`
+
 export const ModalCard = styled.div`
 position: absolute;
 margin-top:-25%;
@@ -37,7 +51,8 @@ export const ModalBody = styled.div`
 
 `
 export const ModalHeader = styled.div`
-display:flex;
+  display:flex;
+  align-items:center;
   padding-top:30px;
   margin-top:40px;
   flex-direction:row;
@@ -45,6 +60,19 @@ display:flex;
   width:80%;
   padding:5px;
 `
+
+export const ModalLogo = styled.img`
+  display:flex;
+  width:150px;
+  height:100px;
+  object-fit: a uto;
+  //background-color:white;
+  //border-radius:50%;
+  margin-left:-10%; 
+  //margin-top:10%;
+  padding:10px;
+`
+
 export const CardImg = styled.img`
   display:flex;
   width:30%;

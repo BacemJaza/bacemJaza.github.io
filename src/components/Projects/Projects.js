@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { Section, SectionTitle, SectionDivider, SectionSubText, SectionText } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import { FaArrowCircleLeft, FaArrowCircleRight, FaWindowClose } from "react-icons/fa";
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Img, Tag, TagList, TitleContent, UtilityList, ChooseSection, ModalCard, ModalBody, ModalHeader, CardImg, FilesImg } from './ProjectsStyles';
+import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Img, Logo, Tag, TagList, TitleContent, UtilityList, ChooseSection, ModalCard, ModalBody, ModalHeader, CardImg, ModalLogo, FilesImg } from './ProjectsStyles';
 import React from 'react'
 import ReactPlayer from "react-player";
 
 
 const Projects = () => {
-  function ShowProjects({id,image,tags,title,description,visit,source,category, projectCategory}) {
+  function ShowProjects({id,image,logo,tags,title,description,visit,source,category, projectCategory}) {
     var style;
     var backgroundImageStyle;
     if(category == projectCategory){
@@ -20,6 +20,7 @@ const Projects = () => {
       <div>
         <BlogCard key={id} style={style}>
               <div >
+                <Logo src={logo}></Logo>
                 <Img src={image}></Img>
             <TitleContent>
               <HeaderThree>{title}</HeaderThree>
@@ -93,16 +94,16 @@ const Projects = () => {
       
       <SectionText>Here you'll find multiple projects made by me. You can choose between : School Projects - Professional Projects - Local projects</SectionText>
       <GridContainer>
-        {projects.map(({id,image,title,description,tags,source,visit,category},index)=>(
-          <ShowProjects key={index} id={id} image={image} tags={tags} title={title} description={description} source={source} visit={visit} category={category} projectCategory={projectCategory}/>
+        {projects.map(({id,image,logo,title,description,tags,source,visit,category},index)=>(
+          <ShowProjects key={index} id={id} image={image} logo={logo} tags={tags} title={title} description={description} source={source} visit={visit} category={category} projectCategory={projectCategory}/>
         ))}
         {showModal!=-1?
         (<ModalCard id='modal'>
           <ModalHeader>
             <div>
-              {item[0].title}
+              {item[0].title} 
             </div>
-            
+            <ModalLogo src={item[0].logo}></ModalLogo>
             <FaWindowClose onClick={()=>{showModal=-1;setShowModal(showModal);}} />
           </ModalHeader>
           <ModalBody>
