@@ -17,7 +17,7 @@ const Hero = (props) => (
       </SectionTitle>
       <SectionText>
       This is where my passions and talents converge and I'm excited to give you a glimpse into my creative world.
-      <SectionSubText><CiCircleAlert size={"100px"} color='#667AD1'/><p>🚀 Super excited to share that I'm currently doing my internship at <a href='https://www.maon.eu/'>Maon GmbH</a>! 🌏💼 Can’t wait to come back with tons of experience and unforgettable memories! ✨</p>
+      <SectionSubText><CiCircleAlert size={"100px"} color='#667AD1'/><p>🚀 Super excited to share that I'm currently doing my internship at <a style={{fontStyle:"bold",color:"white", textDecoration:"underline"}} href='https://www.maon.eu/'>Maon GmbH</a>! 🌏💼 Can’t wait to come back with tons of experience and unforgettable memories! ✨</p>
       </SectionSubText>
       </SectionText>
       <Button>
