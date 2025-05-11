@@ -107,7 +107,7 @@ export const projects = [
     tags: ['Maven','JUNIT','Java'],
     source: '',
     visit: '',
-    filesLink:[['/images/mavenFile.png','files/mavenProject.pdf']],
+    filesLink:[['/images/mavenFile.png','files/MavenProject.pdf']],
     category: 'School',
     id: 10,
   },
