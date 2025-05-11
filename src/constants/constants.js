@@ -1,13 +1,13 @@
 export const projects = [
   {
-    title: 'DPP - Battery project',
-    logo:"/images/logos/3dwave.png",
-    description: "I developed a MERN stack application featuring a user dashboard for registering and showcasing battery passports, with additional security measures implemented to enhance platform safety. Throughout the project, I ensured that the scrum team's efficiency was maintained, meeting deadlines and rigorously testing functionalities.",
-    image: '/images/batteryPassport.png',
-    tags: ['MERN Stack', 'Redux', 'Tailwind CSS'],
+    title: 'Re-design Site',
+    description: "Working with such a fantastic company was truly a rewarding experience. Over the course of two months, I successfully updated their website utilizing a combination of WordPress, HTML, CSS, and a bit of PHP. Additionally, I navigated various plugins like Elementor, NinjaForms, ModernEventCalendar, and Jetpack. These tools greatly facilitated tasks related to design, form creation, security, and event management, making the overall process smoother and more efficient.",
+    image: '/images/emcProject.png',
+    logo: '/images/logos/emerillonMC.png',
+    tags: ['Wordpress', 'CSS3','HTML5','PHP'],
     source: '',
-    visit: '',
-    filesLink:[['/images/DPP.jpg']],
+    filesLink:[['images/manuel.png','files/manuel.pdf']],
+    visit: 'https://www.emerillonmc.com', 
     category: 'Professional',
     id: 0,
   },
@@ -36,18 +36,6 @@ export const projects = [
     videoSrc:"https://www.youtube.com/watch?v=b5AIhBprsHo&ab_channel=JazaBacem",
     category: 'Professional',
     id: 2,
-  },
-  {
-    title: 'Re-design Site',
-    description: "Working with such a fantastic company was truly a rewarding experience. Over the course of two months, I successfully updated their website utilizing a combination of WordPress, HTML, CSS, and a bit of PHP. Additionally, I navigated various plugins like Elementor, NinjaForms, ModernEventCalendar, and Jetpack. These tools greatly facilitated tasks related to design, form creation, security, and event management, making the overall process smoother and more efficient.",
-    image: '/images/emcProject.png',
-    logo: '/images/logos/emerillonMC.png',
-    tags: ['Wordpress', 'CSS3','HTML5','PHP'],
-    source: '',
-    filesLink:[['images/manuel.png','files/manuel.pdf']],
-    visit: 'https://www.emerillonmc.com', 
-    category: 'Professional',
-    id: 3,
   },
   {
     title: 'Influence Connect',
@@ -146,6 +134,18 @@ export const projects = [
     id: 12,
   },
   {
+    title: 'DPP - Battery project',
+    logo:"/images/logos/3dwave.png",
+    description: "I developed a MERN stack application featuring a user dashboard for registering and showcasing battery passports, with additional security measures implemented to enhance platform safety. Throughout the project, I ensured that the scrum team's efficiency was maintained, meeting deadlines and rigorously testing functionalities.",
+    image: '/images/batteryPassport.png',
+    tags: ['MERN Stack', 'Redux', 'Tailwind CSS'],
+    source: '',
+    visit: '',
+    filesLink:[['/images/DPP.jpg']],
+    category: 'Professional',
+    id: 13,
+  },
+  {
     title: 'Blue House Site',
     description: "I had the incredible opportunity to work remotely for 30 hours a week on several React components as part of a group project. It was an exciting journey that strengthened my coding skills and fueled my growth through collaboration, vibrant discussions, and problem-solving. I’m eager to carry this momentum into new challenges ahead!",
     image: '/images/blueHouse.png',
@@ -154,7 +154,7 @@ export const projects = [
     source: '',
     visit: '',
     category: 'Professional',
-    id: 13,
+    id: 14,
   }
 ];
 

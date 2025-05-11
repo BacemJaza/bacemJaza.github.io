@@ -74,6 +74,7 @@ const Projects = () => {
   const [projectCategory,setProjectCategory] = useState(projectCategories[0]);
   let [showModal,setShowModal] = useState(-1);
   const [item,setItem] = useState(null);
+  projects.reverse();
   return (
     <div>
     <Section  id='projects'>
