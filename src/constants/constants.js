@@ -152,7 +152,7 @@ export const projects = [
     logo:"/images/logos/siciliamia.png",
     tags: ['ReactJS', 'Bootstrap CSS','Project Management'],
     source: '',
-    visit: '',
+    visit: 'https://bluehouse.is/',
     filesLink:[['/images/sicilia-mia-certificate.png','files/sicilia-mia-certificate.pdf']],
     category: 'Professional',
     id: 14,

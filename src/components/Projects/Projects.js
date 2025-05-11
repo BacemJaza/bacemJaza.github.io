@@ -39,7 +39,7 @@ const Projects = () => {
                 <ExternalLinks href={source} target='_blank'>Code</ExternalLinks>
               ):(null)}   
               {!visit?<></>:<ExternalLinks href={visit} target='_blank'>Visit</ExternalLinks>}
-              <ExternalLinks onClick={()=>{showModal=id;setShowModal(showModal);setItem(projectsSorted.filter((item)=>item.id==showModal))}} href='#modal'>Open</ExternalLinks>
+              <ExternalLinks onClick={()=>{showModal=id;setShowModal(showModal);setItem(projects.filter((item)=>item.id==showModal))}} href='#modal'>Open</ExternalLinks>
               </UtilityList>                   
               
         </BlogCard>
@@ -74,7 +74,6 @@ const Projects = () => {
   const [projectCategory,setProjectCategory] = useState(projectCategories[0]);
   let [showModal,setShowModal] = useState(-1);
   const [item,setItem] = useState(null);
-  let projectsSorted = projects.reverse();
   return (
     <div>
     <Section  id='projects'>
@@ -95,7 +94,7 @@ const Projects = () => {
       
       <SectionText>Here you'll find multiple projects made by me. You can choose between : School Projects - Professional Projects - Local projects</SectionText>
       <GridContainer>
-        {projectsSorted.map(({id,image,logo,title,description,tags,source,visit,category},index)=>(
+        {projects.map(({id,image,logo,title,description,tags,source,visit,category},index)=>(
           <ShowProjects key={index} id={id} image={image} logo={logo} tags={tags} title={title} description={description} source={source} visit={visit} category={category} projectCategory={projectCategory}/>
         ))}
         {showModal!=-1?
