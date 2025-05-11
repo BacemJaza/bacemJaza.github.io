@@ -101,7 +101,7 @@ export const SectionDivider = styled.div`
     height: 2px;
   }
 `
-export const SectionSubText = styled.p`
+export const SectionSubText = styled.div`
   max-width: 800px;
   display:flex;
   align-items:center;
