@@ -153,6 +153,7 @@ export const projects = [
     tags: ['ReactJS', 'Bootstrap CSS','Project Management'],
     source: '',
     visit: '',
+    filesLink:[['/images/sicilia-mia-certificate.png','files/sicilia-mia-certificate.pdf']],
     category: 'Professional',
     id: 14,
   }
