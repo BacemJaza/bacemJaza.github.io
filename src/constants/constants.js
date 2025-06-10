@@ -6,7 +6,7 @@ export const projects = [
     logo: '/images/logos/emerillonMC.png',
     tags: ['Wordpress', 'CSS3','HTML5','PHP'],
     source: '',
-    filesLink:[['images/manuel.png','files/manuel.pdf']],
+    filesLink:[['images/manuel.png','files/manuel-emc.pdf']],
     visit: 'https://www.emerillonmc.com', 
     category: 'Professional',
     id: 0,
