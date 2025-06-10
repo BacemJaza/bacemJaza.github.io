@@ -9,7 +9,6 @@ export const Container = styled.div`
   padding-top: 2rem;
   max-height:75px;
   // background-color: black;
-  
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -67,21 +66,31 @@ export const Div3 = styled.div`
 `;
 
 export const Mods = styled.div`
-display: flex;
-position: absolute;
+  display: flex;
+  position: absolute;
   grid-area: 1 / 7 / 1 / 7;
   padding: 6px;
-  // justify-content: space-around;
   flex-direction: column;
-  background-color: hsl(232.7,27.3%,23.7%);
-  width:fit;
-  right:0;
-  height:150vh;
+  background-color: hsl(232.7, 27.3%, 23.7%);
+  width: fit-content;
+  right: 0;
+  height: 200vh;
+  z-index: -1;
 
+  &::after {
+    content: '';
+    position: absolute;
+    top: 99.5%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(232.7, 27.3%, 23.7%);
+    transform: translate(-1245%,-50%) rotate(90deg); /* to avoid visual gap */   
+  
+  }
 
   @media ${(props) => props.theme.breakpoints.lg} {
-    // display: none;
-    height: 100vh;
+    display: none;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
