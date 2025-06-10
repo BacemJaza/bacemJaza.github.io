@@ -74,19 +74,19 @@ export const Mods = styled.div`
   background-color: hsl(232.7, 27.3%, 23.7%);
   width: fit-content;
   right: 0;
-  height: 200vh;
+  height: fit-content;
   z-index: -1;
 
   &::after {
     content: '';
     position: absolute;
-    top: 99.5%;
+    bottom: -50px;
     right: 0;
     width: 100%;
-    height: 100%;
-    background: hsl(232.7, 27.3%, 23.7%);
-    transform: translate(-1245%,-50%) rotate(90deg); /* to avoid visual gap */   
-  
+    height: 100px;
+    background-color: hsl(232.7, 27.3%, 23.7%);
+    border-radius: 100% 0 0 0 / 30% 100% 0 0;
+    transform: rotate(180deg);
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {
