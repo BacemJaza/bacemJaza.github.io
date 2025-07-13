@@ -74,9 +74,8 @@ export const Mods = styled.div`
   background-color: hsl(232.7, 27.3%, 23.7%);
   width: fit-content;
   right: 0;
-  height: fit-content;
-  z-index: -1;
-
+  height: 30%;
+  z-index: 100;
   &::after {
     content: '';
     position: absolute;
